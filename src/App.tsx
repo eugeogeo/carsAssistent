@@ -1,12 +1,14 @@
+import { ThemeProvider } from "@mui/material/styles"
+import { Home } from "./pages/index"
+import theme from "./styles/theme"
 
 function App() {
 
   return (
 
-    <div>
-      <h1>Vite + React</h1>
-      <h1>Vite + React</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
 
   )
 }
